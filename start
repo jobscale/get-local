@@ -1,0 +1,6 @@
+#!/bin/bash
+
+main() {
+  ~/bin/run-node ~/projects/node/get-local
+}
+main 2>&1
