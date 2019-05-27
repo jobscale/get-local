@@ -4,8 +4,8 @@
   "description": "",
   "main": "app/index.js",
   "scripts": {
-    "start": "node . $(hostname) $(get-local)",
-    "inspect": "node --inspect-brk . $(hostname) $(get-local)",
+    "start": "node . $(hostname | awk -F. '{print $1}') $(get-local)",
+    "inspect": "node --inspect-brk . $(hostname | awk -F. '{print $1}') $(get-local)",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "npm run lint"
@@ -18,7 +18,9 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.2"
   },
-  "keywords": ["DynamicDNS"],
+  "keywords": [
+    "DynamicDNS"
+  ],
   "author": "jobscale <jobscale@jsx.jp>",
   "license": "MIT"
 }
