@@ -9,6 +9,7 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
     logger: 'readonly',
+    fetch: 'readonly',
   },
   parserOptions: {
     ecmaVersion: 2018,

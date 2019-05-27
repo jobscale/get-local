@@ -1,7 +1,6 @@
+require('core');
 const env = require('./env');
-global.fetch = require('node-fetch');
 
-global.logger = console;
 const app = {
   domain: '-local',
   url: 'https://dyn.value-domain.com/cgi-bin/dyn.fcg',
